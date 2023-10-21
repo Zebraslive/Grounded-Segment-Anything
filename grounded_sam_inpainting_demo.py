@@ -202,7 +202,7 @@ if __name__ == "__main__":
     image_pil = Image.fromarray(image)
     
     pipe = StableDiffusionInpaintPipeline.from_pretrained(
-    "runwayml/stable-diffusion-inpainting", torch_dtype=torch.float16,cache_dir=cache_dir
+    "SG161222/Realistic_Vision_V3.0_VAE", torch_dtype=torch.float16,cache_dir=cache_dir
     )
     pipe = pipe.to("cuda")
 
