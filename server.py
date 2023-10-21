@@ -19,7 +19,6 @@ async def inference(request):
         config = data.get("config")
         grounded_checkpoint = data.get("grounded_checkpoint")
         sam_checkpoint = data.get("sam_checkpoint")
-        input_image = data.get("input_image")
         output_dir = data.get("output_dir")
         box_threshold = float(data.get("box_threshold", 0.3))
         text_threshold = float(data.get("text_threshold", 0.25))
