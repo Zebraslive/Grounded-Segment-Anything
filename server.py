@@ -8,7 +8,7 @@ import base64
 import subprocess
 import tempfile
 
-app = Sanic(__name)
+app = Sanic("server")
 
 @app.route('/inference', methods=['POST'])
 async def inference(request):
