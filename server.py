@@ -27,7 +27,7 @@ async def inference(request):
         device = data.get("device", "cpu")
 
         # Convert base64 image data to an image
-        image = Image.open(BytesIO(base64.b64decode(image_data))
+        image = Image.open(BytesIO(base64.b64decode(image_data)))
 
         # Save the image to a temporary file
         temp_image_file = tempfile.NamedTemporaryFile(delete=False, suffix=".jpg")
