@@ -61,7 +61,7 @@ async def inference(request):
         return response.json({'output_image': output_image_data})
 
     except Exception as e:
-        return response.json({'error': str(e})
+        return response.json({'error': str(e)})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
